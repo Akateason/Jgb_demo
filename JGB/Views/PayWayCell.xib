@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PayWayCell" rowHeight="54" id="KGk-i7-Jjw" customClass="PayWayCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="119"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WOy-5d-O8i">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付方式:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVk-RV-ZKb">
+                                <rect key="frame" x="15" y="17" width="64" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="Qz3-MT-mFd"/>
+                                    <constraint firstAttribute="height" constant="15" id="zyd-Wv-xXw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pVk-RV-ZKb" firstAttribute="leading" secondItem="WOy-5d-O8i" secondAttribute="leading" constant="15" id="4IC-KF-0pt"/>
+                            <constraint firstAttribute="width" constant="320" id="5nX-cu-kp6"/>
+                            <constraint firstAttribute="height" constant="50" id="ZiM-lA-T58"/>
+                            <constraint firstItem="pVk-RV-ZKb" firstAttribute="top" secondItem="WOy-5d-O8i" secondAttribute="top" constant="17" id="gAc-lO-M5x"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付方式" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvL-bC-a0I">
+                        <rect key="frame" x="241" y="17" width="64" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="64" id="0MX-WW-0fk"/>
+                            <constraint firstAttribute="height" constant="15" id="bWW-5U-WjI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="dvL-bC-a0I" secondAttribute="trailing" constant="15" id="ZIZ-gd-yet"/>
+                    <constraint firstAttribute="trailing" secondItem="WOy-5d-O8i" secondAttribute="trailing" id="cQ6-IH-thx"/>
+                    <constraint firstItem="dvL-bC-a0I" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="tui-Km-PkV"/>
+                    <constraint firstItem="WOy-5d-O8i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="uQS-FO-Wbp"/>
+                    <constraint firstItem="WOy-5d-O8i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yfh-Gh-tLR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <connections>
+                <outlet property="lb_key" destination="pVk-RV-ZKb" id="THy-Mi-ND0"/>
+                <outlet property="lb_payWay" destination="dvL-bC-a0I" id="wzO-41-dPM"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="146"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

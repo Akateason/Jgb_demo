@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="a08-Fr-WpB" customClass="StepTfView">
+            <rect key="frame" x="0.0" y="0.0" width="190" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fGQ-Lo-3m1">
+                    <rect key="frame" x="50" y="0.0" width="90" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="59K-dk-8VV"/>
+                        <constraint firstAttribute="width" constant="90" id="qt2-np-8wm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="ksR-sf-zi3"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xX-PT-hOi">
+                    <rect key="frame" x="150" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="8g8-Xf-BOW"/>
+                        <constraint firstAttribute="height" constant="40" id="Ejm-qt-cA8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="＋">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionPlus:" destination="a08-Fr-WpB" eventType="touchUpInside" id="HvQ-zF-Ee1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8b-YY-otS">
+                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="6sT-xp-Xdb"/>
+                        <constraint firstAttribute="width" constant="40" id="a7X-II-Gkz"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <state key="normal" title="－">
+                        <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="actionMinus:" destination="a08-Fr-WpB" eventType="touchUpInside" id="S3Q-yW-viP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="4xX-PT-hOi" secondAttribute="trailing" id="3BJ-e1-Lks"/>
+                <constraint firstItem="4xX-PT-hOi" firstAttribute="top" secondItem="a08-Fr-WpB" secondAttribute="top" id="6un-go-IYf"/>
+                <constraint firstItem="fGQ-Lo-3m1" firstAttribute="top" secondItem="a08-Fr-WpB" secondAttribute="top" id="BHe-HU-uj1"/>
+                <constraint firstAttribute="bottom" secondItem="f8b-YY-otS" secondAttribute="bottom" id="Jwp-i8-YgJ"/>
+                <constraint firstAttribute="bottom" secondItem="fGQ-Lo-3m1" secondAttribute="bottom" id="OTE-4S-5Zz"/>
+                <constraint firstItem="f8b-YY-otS" firstAttribute="top" secondItem="a08-Fr-WpB" secondAttribute="top" id="Uk9-Bi-RRG"/>
+                <constraint firstItem="fGQ-Lo-3m1" firstAttribute="leading" secondItem="f8b-YY-otS" secondAttribute="trailing" constant="10" id="cc0-fm-d8M"/>
+                <constraint firstAttribute="bottom" secondItem="4xX-PT-hOi" secondAttribute="bottom" id="fxt-Nr-N8N"/>
+                <constraint firstItem="f8b-YY-otS" firstAttribute="leading" secondItem="a08-Fr-WpB" secondAttribute="leading" id="pb0-Cu-aKx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bt_add" destination="4xX-PT-hOi" id="xOg-Vh-H4q"/>
+                <outlet property="bt_minus" destination="f8b-YY-otS" id="YaG-WY-Qer"/>
+                <outlet property="tf_num" destination="fGQ-Lo-3m1" id="X6F-60-ltx"/>
+            </connections>
+            <point key="canvasLocation" x="150" y="154"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

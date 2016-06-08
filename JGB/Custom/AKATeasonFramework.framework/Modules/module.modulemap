@@ -1,0 +1,6 @@
+framework module AKATeasonFramework {
+  umbrella header "AKATeasonFramework.h"
+
+  export *
+  module * { export * }
+}

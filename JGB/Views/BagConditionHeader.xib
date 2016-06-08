@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BagConditionHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXV-KS-mOc">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+                    <color key="backgroundColor" red="0.68945725879999997" green="0.90459941210000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="75" id="AOW-ae-WuV"/>
+                        <constraint firstAttribute="width" constant="320" id="But-uz-doP"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="backGroundClickSelector:" destination="iN0-l3-epB" eventType="touchUpInside" id="5aG-6N-HjW"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6F-OW-IhP">
+                    <rect key="frame" x="15" y="32" width="42" height="12"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="42" id="QsE-SQ-oiP"/>
+                        <constraint firstAttribute="height" constant="12" id="s2F-Jf-anK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellRightArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="I8h-RC-nXo">
+                    <rect key="frame" x="297" y="30" width="15" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="KaN-bp-rwh"/>
+                        <constraint firstAttribute="width" constant="15" id="oLh-9l-18U"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6r-Bc-MDD">
+                    <rect key="frame" x="229" y="26" width="60" height="24"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="1Y0-q2-WTb"/>
+                        <constraint firstAttribute="width" constant="60" id="LW5-tY-TZA"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="签收包裹">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="recieveOrCommitButtonClickedSelector:" destination="iN0-l3-epB" eventType="touchUpInside" id="35U-Sy-U50"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="G6r-Bc-MDD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="26" id="4VW-gi-B16"/>
+                <constraint firstAttribute="trailing" secondItem="I8h-RC-nXo" secondAttribute="trailing" constant="8" id="91h-5c-kHP"/>
+                <constraint firstItem="P6F-OW-IhP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Qfk-lA-x5a"/>
+                <constraint firstItem="P6F-OW-IhP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="32" id="X6a-9R-5Yf"/>
+                <constraint firstItem="I8h-RC-nXo" firstAttribute="leading" secondItem="G6r-Bc-MDD" secondAttribute="trailing" constant="8" id="b0X-K9-L7N"/>
+                <constraint firstItem="I8h-RC-nXo" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="eA1-Hb-SJK"/>
+                <constraint firstItem="gXV-KS-mOc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jhP-xz-3r6"/>
+                <constraint firstItem="gXV-KS-mOc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lrP-EY-E5T"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="baseButton" destination="gXV-KS-mOc" id="BgX-Ff-RGN"/>
+                <outlet property="bt_recieveOrComment" destination="G6r-Bc-MDD" id="tjB-Gy-8on"/>
+                <outlet property="lb_bagCondition" destination="P6F-OW-IhP" id="UdC-af-fcp"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="CellRightArrow.png" width="80" height="80"/>
+    </resources>
+</document>

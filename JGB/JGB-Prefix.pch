@@ -1,0 +1,128 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+
+
+//#define STR_APP_API_LOCAL       @"http://app1.romic.jingubang.com"
+#define STR_APP_API_LOCAL       @"http://app.jingubang.com"
+
+
+
+//server request token
+
+#define KEY_TOKEN               @"access_token"
+
+#define CLIENT_KEY              @"5469a1629bbe4"
+
+#define CLIENT_SECRET           @"7aceb00416a6047810e63b7c7b1eafc9"
+
+#define IMG_3G_STR              @"?imageView2/0/q/40/interlace/1"   //七牛 格式
+
+#define IMG_PHONE_WID(X)        [NSString stringWithFormat:@"?imageView/2/w/%d",X]
+
+#define IMG_RANDOM              @"?__t="
+
+//所有圆角弧度
+#define CORNER_RADIUS_ALL       6.0f
+
+/*
+ * APPFRAME
+ */
+#define APPFRAME                [UIScreen mainScreen].bounds
+
+
+/*
+ * SAVE token
+**/
+#define PATH_TOKEN_SAVE         @"Documents/tokenArchive.archive"
+
+/*
+ * SAVE Last Login Token , which is always read and write never delete
+**/
+#define PATH_LAST_TOKEN         @"Documents/lastArc.archive"
+
+/*
+ ** SETTING IMG SIZE  0智能,1高质量,2普通
+ */
+#define PATH_SETTING_IMG_SIZE   @"Documents/settingImgMode.archive"
+
+
+#define PATH_TEST               @"Documents/test.archive"
+
+
+
+/*
+ * judge iphone >= iphone4s
+ */
+#define DEVICE_IS_IPHONE5       ([[UIScreen mainScreen] bounds].size.height >= 568)
+
+
+/*
+ * judge ios version
+ * X -- float version e.g. ios7.0 , ios7.1
+ */
+#define IS_IOS_VERSION(FLOAT_X)     ([[[UIDevice currentDevice] systemVersion] floatValue] >= FLOAT_X)
+
+
+
+
+/*
+ *  TIME STRING FORMAT          @"yyyy 年 MM 月 dd 日"
+**/
+#define TIME_STR_FORMAT_1       @"yyyy 年 MM 月 dd 日"
+#define TIME_STR_FORMAT_2       @"yyyy年MM月dd日"
+#define TIME_STR_FORMAT_3       @"YYYY-MM-dd HH:mm:ss"
+#define TIME_STR_FORMAT_4       @"YYYYMMddHHmmss"
+#define TIME_STR_FORMAT_5       @"YYYY-MM-dd"
+#define TIME_STR_FORMAT_6       @"YYYY-MM-dd HH:mm"
+
+
+
+
+
+/*
+ *  MANAGER NAME
+ */
+#define NAME_ADMINISTRATER          @"猴哥"
+
+
+/*
+ *  SQLITEPATH
+ */
+#define SQLITEPATH              @"jgb.sqlite"
+
+
+
+/*
+ *  实时汇率
+ */
+#define CURRENT_RATE            @"$1 = ¥6.2"
+
+/*
+ *  place holder no pic
+ */
+#define IMG_NOPIC               [UIImage imageNamed:@"noPic_Squre.png"]
+
+
+#define IMG_LOADPRODUCT         [UIImage imageNamed:@"loadproduct"]
+
+
+
+
+
+#endif
+
+
+

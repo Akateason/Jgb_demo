@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentListCell" rowHeight="103" id="t9I-ec-Uly" customClass="CommentListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="103"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t9I-ec-Uly" id="RgI-ru-but">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xNa-P7-sGs">
+                        <rect key="frame" x="4" y="5" width="312" height="95"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kxs-FD-g9y">
+                                <rect key="frame" x="18" y="18" width="60" height="60"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="n90-sH-H4U"/>
+                                    <constraint firstAttribute="width" constant="60" id="pEF-Sx-Zon"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dHw-F2-Htj" appends="YES" id="5wV-z6-ahZ"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlX-vG-xRM">
+                                <rect key="frame" x="95" y="18" width="200" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="60e-77-Xq0"/>
+                                    <constraint firstAttribute="height" constant="15" id="RqK-fy-HAZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="发表评论" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2S-5V-94f">
+                                <rect key="frame" x="95" y="58" width="60" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="8wN-pZ-Zwg"/>
+                                    <constraint firstAttribute="height" constant="20" id="xC2-sI-93x"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5tJ-ef-bab">
+                                <rect key="frame" x="86" y="44" width="77" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="77" id="bwy-GH-edJ"/>
+                                    <constraint firstAttribute="height" constant="52" id="tU7-uX-KCV"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="commentButtonCicked:" destination="t9I-ec-Uly" eventType="touchUpInside" id="qeM-LR-vG3"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kxs-FD-g9y" firstAttribute="top" secondItem="xNa-P7-sGs" secondAttribute="top" constant="18" id="7Zk-A3-FBg"/>
+                            <constraint firstItem="IlX-vG-xRM" firstAttribute="top" secondItem="xNa-P7-sGs" secondAttribute="top" constant="18" id="BXU-pB-7im"/>
+                            <constraint firstItem="Kxs-FD-g9y" firstAttribute="leading" secondItem="xNa-P7-sGs" secondAttribute="leading" constant="18" id="ReS-jU-frL"/>
+                            <constraint firstItem="IlX-vG-xRM" firstAttribute="leading" secondItem="Kxs-FD-g9y" secondAttribute="trailing" constant="17" id="SHQ-ae-h2J"/>
+                            <constraint firstAttribute="height" constant="95" id="ZSA-Qc-g6f"/>
+                            <constraint firstItem="o2S-5V-94f" firstAttribute="leading" secondItem="Kxs-FD-g9y" secondAttribute="trailing" constant="17" id="ery-wa-hSz"/>
+                            <constraint firstAttribute="width" constant="312" id="kVL-1e-DTm"/>
+                            <constraint firstItem="5tJ-ef-bab" firstAttribute="top" secondItem="IlX-vG-xRM" secondAttribute="bottom" constant="8" id="n5y-Id-m0y"/>
+                            <constraint firstAttribute="bottom" secondItem="o2S-5V-94f" secondAttribute="bottom" constant="17" id="x7e-kw-xKh"/>
+                            <constraint firstItem="5tJ-ef-bab" firstAttribute="leading" secondItem="Kxs-FD-g9y" secondAttribute="trailing" constant="8" id="z60-B1-z5L"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="xNa-P7-sGs" secondAttribute="trailing" constant="4" id="7Qw-Q9-ADm"/>
+                    <constraint firstItem="xNa-P7-sGs" firstAttribute="top" secondItem="RgI-ru-but" secondAttribute="top" constant="4" id="BGe-Q9-CHA"/>
+                    <constraint firstItem="xNa-P7-sGs" firstAttribute="leading" secondItem="RgI-ru-but" secondAttribute="leading" constant="4" id="byb-s2-cyD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgView" destination="xNa-P7-sGs" id="312-yl-1KR"/>
+                <outlet property="bt_comment" destination="5tJ-ef-bab" id="BDo-cD-kq5"/>
+                <outlet property="img_goods" destination="Kxs-FD-g9y" id="N5e-tP-NJv"/>
+                <outlet property="lb_status" destination="o2S-5V-94f" id="L56-mU-Zg5"/>
+                <outlet property="lb_title" destination="IlX-vG-xRM" id="Y7k-zn-Tf1"/>
+            </connections>
+            <point key="canvasLocation" x="280" y="115.5"/>
+        </tableViewCell>
+        <tapGestureRecognizer id="dHw-F2-Htj">
+            <connections>
+                <action selector="imgClickedAction:" destination="t9I-ec-Uly" id="44w-XW-dQd"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

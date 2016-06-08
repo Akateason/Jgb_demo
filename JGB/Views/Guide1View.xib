@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Axi-0h-6ot" customClass="Guide1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide_bg_01.png" translatesAutoresizingMaskIntoConstraints="NO" id="vkx-7s-E5I">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="RV0-CP-xoo"/>
+                        <constraint firstAttribute="height" constant="568" id="kZl-bu-wJP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="海外直发，保税仓直发" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kSk-2w-JhG">
+                    <rect key="frame" x="35" y="37" width="251" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="确保100%海外正品" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5s-Rr-Yyo">
+                    <rect key="frame" x="61" y="74" width="198" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ballon.png" translatesAutoresizingMaskIntoConstraints="NO" id="9d6-f5-jRL">
+                    <rect key="frame" x="223" y="159" width="80" height="80"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="overSeaHeart.png" translatesAutoresizingMaskIntoConstraints="NO" id="UGs-fu-ByI">
+                    <rect key="frame" x="80" y="154" width="160" height="160"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plane.png" translatesAutoresizingMaskIntoConstraints="NO" id="w0j-Hr-KEz">
+                    <rect key="frame" x="19" y="137" width="70" height="70"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.68945725879999997" green="0.90459941210000006" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vkx-7s-E5I" firstAttribute="top" secondItem="Axi-0h-6ot" secondAttribute="top" id="BGK-sG-jen"/>
+                <constraint firstAttribute="bottom" secondItem="vkx-7s-E5I" secondAttribute="bottom" id="aAl-U1-42l"/>
+                <constraint firstItem="vkx-7s-E5I" firstAttribute="leading" secondItem="Axi-0h-6ot" secondAttribute="leading" id="eOY-A5-r14"/>
+                <constraint firstAttribute="trailing" secondItem="vkx-7s-E5I" secondAttribute="trailing" id="gI7-5K-mHN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="img_ballon" destination="9d6-f5-jRL" id="4Vi-RI-YNy"/>
+                <outlet property="img_oversea" destination="UGs-fu-ByI" id="DlT-hy-xOz"/>
+                <outlet property="img_plane" destination="w0j-Hr-KEz" id="RPf-Ks-sb9"/>
+                <outlet property="lb_title1" destination="kSk-2w-JhG" id="WXq-9O-ddd"/>
+                <outlet property="lb_title2" destination="M5s-Rr-Yyo" id="IJA-4S-OWz"/>
+            </connections>
+            <point key="canvasLocation" x="446" y="321"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ballon.png" width="122" height="193"/>
+        <image name="guide_bg_01.png" width="640" height="960"/>
+        <image name="overSeaHeart.png" width="343" height="271"/>
+        <image name="plane.png" width="154" height="87"/>
+    </resources>
+</document>
